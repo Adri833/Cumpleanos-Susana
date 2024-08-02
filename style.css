@@ -1,13 +1,27 @@
+/* Restablecer márgenes y paddings predeterminados */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
 /* Declaracion de la fuente */
 @font-face {
     font-family: 'Honey';
     src: url('Fuentes/Super-Honey.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Starborn';
+    src: url('Fuentes/Starborn.ttf') format('truetype');
+}
+
 .rectangulo-rosa {
     width: 100%;
     height: 75vh;
-    background-color: pink;
+    background-color: rgba(255,154,204,255);
     overflow: hidden; /* Todo lo que exceda el div no se muestra*/
     display: flex;
     align-items: center;
@@ -19,12 +33,14 @@
     width: auto;
     height: 97%;
     margin-left: 0.6%;
+    animation: desplazarizq 0.7s ease-out;
 }
 
 #derecha {
     width: auto;
     height: 97%;
     margin-right: 0.6%;
+    animation: desplazarder 0.7s ease-out;
 }
 
 .texto-centrado {
@@ -33,7 +49,84 @@
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-family: 'Honey', sans-serif;
-    font-size: 140px;
+    font-family: 'StarBorn', sans-serif;
+    font-size: 5vw;
+    letter-spacing: 0.2vw;
+    max-width: 80%;
+    animation: aparecer 1.5s ease-in-out;
 }
 
+.contenedor-boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    animation: expandir 1.3s ease-out;
+}
+
+.boton-personalizado {
+    background-color: rgba(0, 255, 255, 0.562);
+    border-color: rgba(0, 255, 255, 0.811);
+    padding: 1em 4em; /* Relleno del botón*/
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 0 1em;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+    font-family: 'StarBorn', sans-serif;
+}
+
+.boton-personalizado:hover {
+    background-color: rgb(20, 231, 228);
+}
+
+.gif-lateral {
+    width: 10vw; /* Tamaño del GIF usando vw para ser responsivo */
+    height: auto; /* Mantiene la proporción del GIF */
+    margin: 0 2vw; /* Espacio entre los GIFs y el botón */
+}
+
+/* Animaciones */
+@keyframes desplazarizq {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes desplazarder {
+    from {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes expandir {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

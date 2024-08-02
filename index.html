@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Titulo de la pestaña -->
-    <title>Feliz cum!! 💦</title>
+        <!-- Titulo de la pestaña -->
+        <title>Feliz cum!! 💦</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="Imagenes\pastel.png">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="Imagenes\pastel.png">
 
-     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<header>
-    <!-- Color del fondo para poner imagenes -->
-    <div class="rectangulo-rosa">
-        <!-- Imagen de la izquierda -->
-        <img id="izquierda" alt="Comiendo patatas" src="Imagenes/foto-principal1.jpg">
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <!-- Color del fondo para poner imagenes -->
+            <div class="rectangulo-rosa">
 
-        <!-- Texto central -->
-        <h1 class="texto-centrado">¡¡Feliz cum!!</h1>
+                <!-- Imagen de la izquierda -->
+                <img id="izquierda" alt="Comiendo patatas" src="Imagenes/foto-principal1.jpg">
 
-        <!-- Imagen de la derecha -->
-        <img id="derecha" alt=":O" src="Imagenes/foto-principal2.jpg">
-    </div>
-</header>
-<body>
+                <!-- Texto central -->
+                <h1 class="texto-centrado">!!Feliz cum!!</h1>
+
+                <!-- Imagen de la derecha -->
+                <img id="derecha" alt=":O" src="Imagenes/foto-principal2.jpg">
+            </div>
+        </header>
+
+        <div class="contenedor-boton">
+
+            <!-- GIF a la izquierda del botón -->
+            <img class="gif-lateral" src="GIFs/tarta.gif" alt="Tarta GIF">
+
+            <!-- Boton -->
+            <button class="boton-personalizado" id="boton">Comenzar</button>
+
+            <!-- GIF a la derecha del botón -->
+            <img class="gif-lateral" src="GIFs/tarta.gif" alt="Tarta GIF">
+        </div>
+
+    <audio id="ninos" src="Audio/Niños FNAF.mp3" autoplay></audio>
     
+    <script>
+        document.getElementById('boton').addEventListener('click', function() {
+            window.location.href = 'colgate.html';
+        });
+    </script>
 </body>
 </html>

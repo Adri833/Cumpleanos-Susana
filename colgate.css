@@ -1,0 +1,132 @@
+/* Restablecer márgenes y paddings predeterminados */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Starborn';
+    src: url('Fuentes/Starborn.ttf') format('truetype');
+}
+
+.contenedor-texto {
+    width: 100%; /* Ajusta el ancho para compartir el espacio con el contenedor-meme */
+    background-color: rgba(0, 153, 255, 0.696);
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto dentro del contenedor */
+    justify-content: space-between; /* Centra horizontalmente el texto dentro del contenedor */
+    height: 55%;
+    box-sizing: border-box;
+}
+
+#meme {
+    width: 27.56%;
+    max-width: 100%; /* Asegúrate de que la imagen no se salga del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    animation: aparecer 10s ease-out;
+}
+
+.contenedor-principal {
+    display: flex; /* Flexbox para alinear .contenedor-texto2 y el input en una fila */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Distribuye el texto y el input en los extremos */
+    height: 45vh;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contenedor-texto2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    width: 50%;
+    background-image: url('Imagenes/cars.jpg');
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Añade sombra al texto para mejor legibilidad */
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuadro de entrada */
+.input-cuadro {
+    padding: 20px;
+    font-size: 50px;
+    border: 6px solid #0099ff; /* Borde azul para el cuadro de entrada */
+    border-radius: 20px; /* Bordes redondeados */
+    color: #333; /* Color del texto dentro del cuadro de entrada */
+    outline: none; /* Elimina el contorno predeterminado */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para el cuadro de entrada */
+    transition: border-color 0.3s ease; /* Transición suave para el color del borde */
+    margin-right: 6%; /* Añade espacio entre el cuadro de entrada y el contenedor */
+}
+
+/* Efecto de foco para el cuadro de entrada */
+.input-cuadro:focus {
+    border-color: #0064a7; /* Cambia el color del borde cuando está en foco */
+}
+
+h1 {
+    font-size: 70px;
+    font-family: 'StarBorn', sans-serif;
+}
+
+.contenedor-texto h1 {
+    margin-left: 14.5%;
+    animation: desplazarizq 1s ease-in-out;
+}
+
+.contenedor-texto2 h1 {
+    animation: desplazardown 1.5s ease;
+}
+
+input {
+    animation: desplazarder 4s ease;
+}
+
+/* Animaciones */
+@keyframes desplazarizq {
+    from {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes desplazardown {
+    from {
+        transform: translateY(170px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes desplazarder {
+    from {
+        transform: translateX(110px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
