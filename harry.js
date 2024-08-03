@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function checkInput() {
         if (input.value === 'Alohomora') {
             // Redirige a otro archivo HTML cuando el valor es '123'
-            window.location.href = 'index.html'; 
+            window.location.href = 'palomitero.html'; 
         }
     }
 
