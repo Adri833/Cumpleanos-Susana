@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Función para verificar el valor del input
     function checkInput() {
-        if (input.value === 'ORAL-B') {
+        if (input.value === 'Alohomora') {
             // Redirige a otro archivo HTML cuando el valor es '123'
-            window.location.href = 'harry.html'; 
+            window.location.href = 'index.html'; 
         }
     }
 

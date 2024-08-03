@@ -52,17 +52,21 @@ html, body {
     box-sizing: border-box;
 }
 
-/* Estilos para el cuadro de entrada */
 .input-cuadro {
     padding: 20px;
     font-size: 50px;
-    border: 6px solid #0099ff; /* Borde azul para el cuadro de entrada */
-    border-radius: 20px; /* Bordes redondeados */
-    color: #333; /* Color del texto dentro del cuadro de entrada */
-    outline: none; /* Elimina el contorno predeterminado */
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para el cuadro de entrada */
-    transition: border-color 0.3s ease; /* Transición suave para el color del borde */
-    margin-right: 6%; /* Añade espacio entre el cuadro de entrada y el contenedor */
+    border: 6px solid #0099ff;
+    border-radius: 20px;
+    color: #000000;
+    outline: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transition: border-color 0.3s ease;
+    margin-right: 6%;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), 
+                url('Imagenes/Colgate_logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Efecto de foco para el cuadro de entrada */

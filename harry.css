@@ -1,0 +1,73 @@
+/* Restablecer márgenes y paddings predeterminados */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(93, 0, 5);
+}
+
+.anden {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+#foto-anden {
+    width: 36%;
+    height: auto;
+    animation: desplazarup 5s ease-in-out;
+}
+
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el cuadro de entrada */
+.input-cuadro {
+    padding: 18px;
+    font-size: 40px;
+    border: 6px solid #efb810; /* Borde azul para el cuadro de entrada */
+    border-radius: 20px; /* Bordes redondeados */
+    color: #bf930d; /* Color del texto dentro del cuadro de entrada */
+    background-color: #0c0c0c;
+    outline: none; /* Elimina el contorno predeterminado */
+    box-shadow: 2px 2px 4px #bf930d; /* Sombra para el cuadro de entrada */
+    transition: border-color 0.3s ease; /* Transición suave para el color del borde */
+    animation: expandir 1.2s ease-in-out;
+    animation-delay: 5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/* Efecto de foco para el cuadro de entrada */
+.input-cuadro:focus {
+    border-color: #9c7a16; /* Cambia el color del borde cuando está en foco */
+}
+
+/* Animaciones */
+@keyframes expandir {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes desplazarup {
+    from {
+        transform: translateY(-650px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

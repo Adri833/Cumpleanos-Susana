@@ -88,6 +88,7 @@ html, body {
     margin: 0 2vw; /* Espacio entre los GIFs y el botón */
 }
 
+
 /* Animaciones */
 @keyframes desplazarizq {
     from {
