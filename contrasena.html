@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Titulo de la pestaña -->
+        <title>...</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="Imagenes/candado1.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="contrasena.css">
+    </head>
+    <body>
+        <!-- Inputs para introducir la contrasena -->
+        <div class="contenedor-contrasena">
+            <input class="input-contrasena" type="text" maxlength="1"  id="box1" placeholder="1">
+            <input class="input-contrasena" type="text" maxlength="1"  id="box2" placeholder="3">
+            <input class="input-contrasena" type="text" maxlength="1"  id="box3" placeholder="5">
+            <input class="input-contrasena" type="text" maxlength="1"  id="box4" placeholder="4">
+            <input class="input-contrasena" type="text" maxlength="1"  id="box5" placeholder="2">
+        </div>
+
+        <div id="mensaje" class="mensaje"></div>
+
+        <audio id="corazon" src="Audio/puppet.mp3" autoplay loop></audio>
+        <audio id="alertSound" src="Audio/Success.mp3" preload="auto"></audio>
+
+        <script src="contrasena.js"></script>
+    </body>
+</html>
